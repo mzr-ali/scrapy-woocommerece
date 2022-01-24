@@ -40,7 +40,7 @@ def get_category(req_url):
 
 class CreateProductSpider(scrapy.Spider):
     name = 'create'
-    allowed_domains = ['my.07zr.com', 'static.07zr.com']
+    allowed_domains = [DOMAIN]
     CAT_SET = ""
     cat_list = []
     cat_index = 0

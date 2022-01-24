@@ -15,7 +15,7 @@ header = {
 
 class TireCrawlerSpider(scrapy.Spider):
     name = 'update'
-    allowed_domains = ['07zr.com']
+    allowed_domains = [DOMAIN]
 
     def __init__(self, keyword=None, category=None, **kwargs):
         self.url = keyword
